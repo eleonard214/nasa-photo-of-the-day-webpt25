@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+// testing a theory, if you are checking my code could you please type something here
 
 function App() {
   return (
