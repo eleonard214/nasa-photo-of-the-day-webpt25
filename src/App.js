@@ -1,11 +1,17 @@
 import React, { useState, useEffect}from "react";
-
+import styled from 'styled-components'
 import axios from "axios";
 import IsItLoad from './Components/IsItLoad';
 
+
+
 import "./App.css";
 // testing a theory, if you are checking my code could you please type something here
-
+const StyledApp = styled.div`
+background-color: purple;
+color: cyan;
+border-radius: 50px;
+`
 function App() {
   const [data,setData]=useState('')
   const [date, setDate]=useState('2021-02-02')
@@ -33,7 +39,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <StyledApp className="App">
       <p>
         NASA Photo of the day! Have fun <span role="img" aria-label='go!'>🚀</span>!
       </p>
@@ -41,7 +47,7 @@ function App() {
       data={data}
       loading={loading}
       updateDate={updateDate}/>
-    </div>
+    </StyledApp>
   );
 }
 
